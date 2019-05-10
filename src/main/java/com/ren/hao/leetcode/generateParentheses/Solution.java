@@ -29,7 +29,7 @@ public class Solution {
         if (left<nb){
             add(current+'(', left+1, right);
         }
-        // 如果右边的括号数小于n和左边的括号数，此时可以添加右括号
+        // 如果右边的括号数小于n和左边的括号数，此时可以添加右括号 
         if (right<nb && right<left){
             add(current+')', left, right+1);
         }
