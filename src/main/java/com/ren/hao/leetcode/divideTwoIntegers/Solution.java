@@ -8,6 +8,10 @@ package com.ren.hao.leetcode.divideTwoIntegers;
 public class Solution {
     public int divide(int dividend, int divisor) {
         boolean isSame = (dividend>0 && divisor>0) || (dividend<0 && divisor<0);
+
+        if (dividend == Integer.MIN_VALUE)
+            dividend = Integer.MAX_VALUE;
+
         dividend = Math.abs(dividend);
         divisor = Math.abs(divisor);
 
